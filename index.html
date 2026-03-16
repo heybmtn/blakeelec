@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Electrician in Porthcawl | Blake Electrical Contractors</title>
+  <meta name="description" content="Blake Electrical Contractors — trusted local electrician in Porthcawl & Bridgend. Rewires, fuse board upgrades, EV chargers, EICRs. Call 07495 309257 for a free quote.">
+  <link rel="canonical" href="https://blakeelectricalcontractors.co.uk">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Electrician in Porthcawl | Blake Electrical Contractors">
+  <meta property="og:description" content="Reliable, professional domestic electrical services across Porthcawl, Bridgend and surrounding areas. Call 07495 309257.">
+  <meta property="og:url" content="https://blakeelectricalcontractors.co.uk">
+  <meta property="og:image" content="https://blakeelectricalcontractors.co.uk/og-image.jpg">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Blake Electrical Contractors",
+    "telephone": "+447495309257",
+    "email": "enquiries@blakeelectricalcontractors.co.uk",
+    "url": "https://blakeelectricalcontractors.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porthcawl",
+      "addressRegion": "Bridgend",
+      "addressCountry": "GB"
+    },
+    "areaServed": [
+      "Porthcawl", "Bridgend", "Maesteg", "Pencoed", "Cowbridge",
+      "Barry", "Ogmore-by-Sea", "Kenfig Hill", "Tondu", "Litchard"
+    ],
+    "priceRange": "££",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "description": "Reliable, professional domestic electrical services in Porthcawl and across Bridgend county. Rewires, consumer unit upgrades, EV charger installations, EICRs and more."
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES
+    ============================================================ */
+    :root {
+      --accent:       #f1d352;
+      --accent-dark:  #c9ac1c;
+      --dark:         #050508;
+      --dark-mid:     #111118;
+      --page-bg:      #f7f7f8;
+      --white:        #ffffff;
+
+      --body:   1.25rem;
+      --small:  1.125rem;
+      --label:  0.9375rem;
+
+      --radius: 6px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.18);
+      --transition: 0.25s ease;
+
+      --safe-top:    env(safe-area-inset-top);
+      --safe-bottom: env(safe-area-inset-bottom);
+      --safe-left:   env(safe-area-inset-left);
+      --safe-right:  env(safe-area-inset-right);
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-size: var(--body);
+      background: var(--page-bg);
+      color: var(--dark);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.15;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+
+    /* ============================================================
+       REDUCED MOTION
+    ============================================================ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ============================================================
+       UTILITY
+    ============================================================ */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: var(--label);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ============================================================
+       STICKY HEADER
+    ============================================================ */
+    #site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding-top: var(--safe-top);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      padding: 0 1.25rem;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    /* Logo placeholder — swap for <img> when logo file is supplied */
+    .logo-placeholder {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      width: 180px;
+      height: 56px;
+      background: var(--dark);
+      border-radius: var(--radius);
+      padding: 0 0.75rem;
+      flex-shrink: 0;
+    }
+    .logo-placeholder .bolt {
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+    .logo-placeholder span {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 0.8rem;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    /* 👉 When logo image is available, replace .logo-placeholder div with:
+       <img src="logo.png" alt="Blake Electrical Contractors logo" width="180" height="56"> */
+
+    .header-phone {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--accent-dark);
+      white-space: nowrap;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color var(--transition);
+    }
+    .header-phone:hover { color: var(--dark); }
+    .header-phone .ph-icon { font-size: 1.1rem; }
+
+    @media (max-width: 360px) {
+      .header-phone .ph-text { display: none; }
+    }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    #hero {
+      background: var(--dark);
+      color: var(--white);
+      padding: 5rem 1.25rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Diagonal accent stripe */
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 55%;
+      height: 130%;
+      background: linear-gradient(135deg, transparent 0%, rgba(241,211,82,0.06) 60%, rgba(241,211,82,0.02) 100%);
+      transform: skewX(-12deg);
+      pointer-events: none;
+    }
+    /* Subtle grid texture */
+    #hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 60px);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .booking-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(241,211,82,0.12);
+      border: 1px solid rgba(241,211,82,0.35);
+      border-radius: 100px;
+      padding: 0.35rem 0.9rem;
+      font-size: var(--label);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .booking-badge .dot {
+      width: 8px; height: 8px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    #hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+      max-width: 680px;
+    }
+    #hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: var(--small);
+      color: rgba(255,255,255,0.72);
+      max-width: 540px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: var(--body);
+      cursor: pointer;
+      border: none;
+      min-height: 52px;
+      transition: background var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
+      text-decoration: none;
+    }
+    .btn:active { transform: translateY(1px); }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--dark);
+    }
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      box-shadow: 0 6px 20px rgba(241,211,82,0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.35);
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: var(--white);
+      border: 2px solid var(--dark);
+    }
+    .btn-dark:hover {
+      background: var(--dark-mid);
+    }
+
+    @media (max-width: 400px) {
+      .hero-ctas { flex-direction: column; }
+      .hero-ctas .btn { width: 100%; justify-content: center; }
+    }
+
+    /* ============================================================
+       TRUST BAR
+    ============================================================ */
+    #trust {
+      background: var(--accent);
+      padding: 1.1rem 1.25rem;
+    }
+
+    .trust-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: var(--small);
+      color: var(--dark);
+    }
+    .trust-item .t-icon { font-size: 1.15rem; }
+
+    /* ============================================================
+       SERVICES SECTION
+    ============================================================ */
+    #services {
+      padding: 5rem 1.25rem;
+      background: var(--page-bg);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--dark);
+      margin-top: 0.25rem;
+    }
+    .section-header p {
+      color: #555;
+      max-width: 520px;
+      margin: 0.75rem auto 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      border: 1px solid rgba(0,0,0,0.07);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: rgba(241,211,82,0.4);
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-icon {
+      width: 52px; height: 52px;
+      background: rgba(241,211,82,0.15);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    .service-card p {
+      font-size: var(--small);
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .service-card.emergency {
+      background: var(--dark);
+      border-color: var(--accent);
+    }
+    .service-card.emergency::before { transform: scaleX(1); }
+    .service-card.emergency .service-icon {
+      background: rgba(241,211,82,0.2);
+    }
+    .service-card.emergency h3,
+    .service-card.emergency p { color: var(--white); }
+    .service-card.emergency p { color: rgba(255,255,255,0.72); }
+
+    /* ============================================================
+       WORK / STATS SECTION
+    ============================================================ */
+    #work {
+      padding: 5rem 1.25rem;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .work-inner { max-width: 1160px; margin: 0 auto; }
+
+    .work-header { text-align: center; margin-bottom: 3rem; }
+    .work-header h2 { color: var(--white); font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; }
+    .work-header p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 0.75rem auto 0; }
+
+    .photos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 768px) {
+      .photos-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    /* 👉 Replace placeholder boxes with <img> tags when photos are available */
+    .photo-placeholder {
+      background: var(--dark-mid);
+      border: 2px dashed rgba(241,211,82,0.25);
+      border-radius: 8px;
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      text-align: center;
+      color: rgba(255,255,255,0.4);
+      font-size: var(--label);
+    }
+    .photo-placeholder .ph-icon { font-size: 1.75rem; color: rgba(241,211,82,0.3); }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .stat-box { padding: 1.5rem 1rem; }
+    .stat-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--accent);
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label {
+      font-size: var(--small);
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* ============================================================
+       ABOUT SECTION
+    ============================================================ */
+    #about {
+      padding: 5rem 1.25rem;
+      background: var(--page-bg);
+    }
+
+    .about-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .about-inner { grid-template-columns: 300px 1fr; }
+    }
+
+    /* 👉 Replace with <img> when owner photo is available */
+    .owner-photo-placeholder {
+      background: var(--dark-mid);
+      border: 2px dashed rgba(241,211,82,0.3);
+      border-radius: 10px;
+      aspect-ratio: 3/4;
+      max-width: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: rgba(255,255,255,0.45);
+      font-size: var(--small);
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .owner-photo-placeholder .ph-icon { font-size: 3rem; color: rgba(241,211,82,0.3); }
+
+    .about-text h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+    }
+    .about-text p {
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    .about-text p:last-of-type { margin-bottom: 1.5rem; }
+
+    .about-accreditations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
+    }
+    .accred-chip {
+      background: var(--dark);
+      color: var(--accent);
+      border: 1px solid rgba(241,211,82,0.3);
+      border-radius: 100px;
+      padding: 0.35rem 0.85rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: var(--label);
+    }
+
+    /* ============================================================
+       AREAS WE COVER
+    ============================================================ */
+    #areas {
+      padding: 5rem 1.25rem;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .areas-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .areas-inner h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+    .areas-sub {
+      color: rgba(255,255,255,0.65);
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .areas-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      justify-content: center;
+    }
+    .area-chip {
+      background: var(--dark-mid);
+      border: 1px solid rgba(241,211,82,0.25);
+      border-radius: 100px;
+      padding: 0.5rem 1.1rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: var(--small);
+      color: var(--white);
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+    }
+    .area-chip:hover {
+      background: rgba(241,211,82,0.12);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .radius-note {
+      margin-top: 1.75rem;
+      font-size: var(--small);
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ============================================================
+       QUOTE FORM
+    ============================================================ */
+    #quote {
+      padding: 5rem 1.25rem;
+      background: var(--page-bg);
+    }
+
+    .form-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .form-header { text-align: center; margin-bottom: 2rem; }
+    .form-header h2 {
+      font-size: clamp(1.7rem, 3vw, 2.2rem);
+      font-weight: 800;
+    }
+    .form-header p { color: #555; margin-top: 0.5rem; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 500px) {
+      .form-row { grid-template-columns: 1fr; }
+      .form-wrapper { padding: 2rem 1.25rem; }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .form-group.full { grid-column: 1 / -1; }
+
+    label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: var(--label);
+      color: var(--dark);
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="file"],
+    select,
+    textarea {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.25rem; /* 20px — above iOS zoom threshold */
+      padding: 0.75rem 0.9rem;
+      border: 2px solid rgba(0,0,0,0.12);
+      border-radius: var(--radius);
+      background: var(--page-bg);
+      color: var(--dark);
+      width: 100%;
+      min-height: 52px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--accent-dark);
+      box-shadow: 0 0 0 3px rgba(241,211,82,0.2);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .file-label {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      padding: 0.75rem 0.9rem;
+      border: 2px dashed rgba(0,0,0,0.15);
+      border-radius: var(--radius);
+      background: var(--page-bg);
+      font-size: var(--small);
+      color: #666;
+      transition: border-color var(--transition);
+    }
+    .file-label:hover { border-color: var(--accent-dark); }
+    input[type="file"] { display: none; }
+
+    .submit-btn {
+      width: 100%;
+      font-size: var(--body);
+      padding: 1rem;
+      margin-top: 0.5rem;
+      justify-content: center;
+    }
+
+    .form-error {
+      display: none;
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: var(--radius);
+      padding: 0.85rem 1rem;
+      font-size: var(--small);
+      color: #b91c1c;
+      margin-top: 0.75rem;
+    }
+
+    /* Success state */
+    .success-state {
+      display: none;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .success-state .tick {
+      width: 64px; height: 64px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.75rem;
+      margin: 0 auto 1.25rem;
+    }
+    .success-state h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+    .success-state p {
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .success-state a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    #footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.65);
+      padding: 3rem 1.25rem calc(2rem + var(--safe-bottom));
+    }
+
+    .footer-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem 3rem;
+      align-items: flex-start;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-brand .brand-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--white);
+      margin-bottom: 0.35rem;
+    }
+    .footer-brand .brand-tagline {
+      font-size: var(--small);
+      color: rgba(255,255,255,0.5);
+    }
+
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(255,255,255,0.65);
+      font-size: var(--small);
+      margin-bottom: 0.5rem;
+      transition: color var(--transition);
+    }
+    .footer-contact a:hover { color: var(--accent); }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: var(--label);
+    }
+
+    .footer-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    /* 👉 Letterbox Drops credit — do not remove */
+    .footer-credit {
+      width: 100%;
+      text-align: center;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: var(--label);
+      color: rgba(255,255,255,0.4);
+    }
+    .footer-credit a {
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.35);
+    }
+    .footer-credit a:hover { text-decoration-color: var(--white); }
+
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY HEADER
+  ============================================================ -->
+  <header id="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <img src="logo.jpg" alt="Blake Electrical Contractors logo" width="180" height="56" style="object-fit:contain;">
+
+      <!-- Click-to-call phone number -->
+      <a href="tel:07495309257" class="header-phone" aria-label="Call Blake Electrical Contractors on 07495 309257">
+        <span class="ph-icon">📞</span>
+        <span class="ph-text">07495 309257</span>
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-inner">
+
+<h1>Your Local <em>Electrician</em><br>in Porthcawl</h1>
+
+      <p class="hero-sub">
+        Reliable, professional domestic electrical work across Porthcawl, Bridgend and the surrounding area — done right, first time.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#quote" class="btn btn-primary" aria-label="Get a free quote — scroll to quote form">
+          ⚡ Get a Free Quote
+        </a>
+        <a href="tel:07495309257" class="btn btn-outline" aria-label="Call us now on 07495 309257">
+          📞 Call Now
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TRUST BAR
+  ============================================================ -->
+  <section id="trust" aria-label="Why choose us">
+    <div class="trust-inner">
+
+      <div class="trust-item">
+        <span class="t-icon">📍</span>
+        Based in Porthcawl
+      </div>
+
+      <div class="trust-item">
+        <span class="t-icon">⚡</span>
+        Fully qualified electrician
+      </div>
+
+      <div class="trust-item">
+        <span class="t-icon">🛡️</span>
+        Fully insured
+      </div>
+
+      <div class="trust-item">
+        <span class="t-icon">📋</span>
+        NICEIC registered
+      </div>
+
+      <div class="trust-item">
+        <span class="t-icon">💬</span>
+        Free no-obligation quotes
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What we do</span>
+        <h2 id="services-heading">Electrical Services in Porthcawl &amp; Bridgend</h2>
+        <p>From consumer unit upgrades to full rewires — domestic electrical work handled cleanly and safely.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🔌</div>
+          <h3>Full &amp; Partial Rewires</h3>
+          <p>Old wiring causing concerns? We carry out full and partial rewires to bring your home up to current BS 7671 standards — safely and with minimal disruption.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🗄️</div>
+          <h3>Consumer Unit (Fuse Board) Upgrades</h3>
+          <p>Upgrading your fuse board improves safety and protects your home. We supply and fit modern consumer units with RCD and RCBO protection.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🔍</div>
+          <h3>EICR — Electrical Installation Condition Reports</h3>
+          <p>Landlords, homeowners, and buyers all need an up-to-date EICR. We carry out thorough inspections and provide a clear, certified report.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🚗</div>
+          <h3>EV Charger Installations</h3>
+          <p>Making the switch to electric? We install home EV chargers — including OZEV-approved units — ensuring a safe, compliant install every time.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🍳</div>
+          <h3>Kitchen &amp; Bathroom Electrics</h3>
+          <p>Renovating? We handle all the electrical work for kitchens and bathrooms — from new circuits to extractor fans and shaver sockets.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">💡</div>
+          <h3>Indoor &amp; Outdoor Lighting</h3>
+          <p>Downlights, garden lighting, security lights and media walls — we design and install lighting that works for your home and your lifestyle.</p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">🏠</div>
+          <h3>Extensions &amp; Renovations</h3>
+          <p>Building or converting? We work alongside your builders to get first and second fix electrics right — sockets, circuits, and consumer unit work included.</p>
+        </div>
+
+        <!-- Emergency callout -->
+        <div class="service-card emergency reveal">
+          <div class="service-icon" aria-hidden="true">⚡</div>
+          <h3>Fault Finding &amp; Repairs</h3>
+          <p>Tripping circuits, dead sockets, or flickering lights? We diagnose and fix electrical faults quickly — no call-out drama, just the problem sorted.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WORK & STATS
+  ============================================================ -->
+  <section id="work" aria-labelledby="work-heading">
+    <div class="work-inner">
+
+      <div class="work-header reveal">
+        <span class="section-eyebrow">Our work</span>
+        <h2 id="work-heading">Quality You Can See</h2>
+        <p>Every job is finished to a standard we'd be happy with in our own home.</p>
+      </div>
+
+      <!-- 👉 Replace placeholder boxes with real before & after photos when available -->
+      <div class="photos-grid">
+        <div class="photo-placeholder reveal">
+          <span class="ph-icon" aria-hidden="true">📷</span>
+          Add photo — consumer unit upgrade
+        </div>
+        <div class="photo-placeholder reveal">
+          <span class="ph-icon" aria-hidden="true">📷</span>
+          Add photo — EV charger installation
+        </div>
+        <div class="photo-placeholder reveal">
+          <span class="ph-icon" aria-hidden="true">📷</span>
+          Add photo — kitchen rewire
+        </div>
+        <div class="photo-placeholder reveal">
+          <span class="ph-icon" aria-hidden="true">📷</span>
+          Add photo — outdoor lighting installation
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-box reveal">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">Jobs completed</span>
+        </div>
+        <div class="stat-box reveal">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years of experience</span>
+        </div>
+        <div class="stat-box reveal">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Towns &amp; villages served</span>
+        </div>
+        <div class="stat-box reveal">
+          <span class="stat-num">5★</span>
+          <span class="stat-label">Google rating</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="about-inner container">
+
+      <!-- 👉 Replace with <img src="owner.jpg" alt="Blake, electrician and owner of Blake Electrical Contractors"> when photo is available -->
+      <div class="owner-photo-placeholder reveal" aria-label="Owner photo placeholder">
+        <span class="ph-icon" aria-hidden="true">👤</span>
+        Add owner photo here
+      </div>
+
+      <div class="about-text reveal">
+        <span class="section-eyebrow">About us</span>
+        <h2 id="about-heading">A Local Electrician You Can Actually Trust</h2>
+
+        <p>
+          Blake Electrical Contractors is a Porthcawl-based electrical contractor covering Bridgend and the surrounding area. We specialise in domestic work — from quick repairs and fault finding to full rewires, fuse board upgrades, and EV charger installations. Every job gets the same level of care, whether it's a single socket or a whole house.
+        </p>
+
+        <p>
+          What makes us different? We turn up when we say we will, we explain everything clearly before we start, and we leave your home tidy. We work to Part P of the Building Regulations and issue all the correct certification — so whether you're selling your home or renting it out, the paperwork is in order. No fuss, no surprises.
+        </p>
+
+        <div class="about-accreditations">
+          <span class="accred-chip">✅ NICEIC Registered</span>
+          <span class="accred-chip">✅ Part P Certified</span>
+          <span class="accred-chip">✅ Fully Insured</span>
+          <span class="accred-chip">✅ Free Quotes</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       AREAS WE COVER
+       Area names appear here only — not in any other section
+  ============================================================ -->
+  <section id="areas" aria-labelledby="areas-heading">
+    <div class="areas-inner reveal">
+
+      <span class="section-eyebrow">Coverage</span>
+      <h2 id="areas-heading">Areas We Cover</h2>
+      <p class="areas-sub">
+        We're based in Porthcawl and travel across Bridgend county. If you're not sure we cover your area, just give us a ring.
+      </p>
+
+      <div class="areas-chips" role="list" aria-label="Areas covered">
+        <span class="area-chip" role="listitem">Porthcawl</span>
+        <span class="area-chip" role="listitem">Bridgend</span>
+        <span class="area-chip" role="listitem">Maesteg</span>
+        <span class="area-chip" role="listitem">Pencoed</span>
+        <span class="area-chip" role="listitem">Cowbridge</span>
+        <span class="area-chip" role="listitem">Barry</span>
+        <span class="area-chip" role="listitem">Ogmore-by-Sea</span>
+        <span class="area-chip" role="listitem">Kenfig Hill</span>
+        <span class="area-chip" role="listitem">Tondu</span>
+        <span class="area-chip" role="listitem">Litchard</span>
+        <span class="area-chip" role="listitem">Laleston</span>
+        <span class="area-chip" role="listitem">Coity</span>
+        <span class="area-chip" role="listitem">Brackla</span>
+        <span class="area-chip" role="listitem">Sarn</span>
+        <span class="area-chip" role="listitem">North Cornelly</span>
+        <span class="area-chip" role="listitem">South Cornelly</span>
+        <span class="area-chip" role="listitem">Nottage</span>
+        <span class="area-chip" role="listitem">Newton</span>
+        <span class="area-chip" role="listitem">Rest Bay</span>
+        <span class="area-chip" role="listitem">Cefn Cribwr</span>
+      </div>
+
+      <p class="radius-note">Typically covering a 15–20 mile radius from Porthcawl. Not on the list? Call us — we'll let you know.</p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       QUOTE FORM
+  ============================================================ -->
+  <section id="quote" aria-labelledby="quote-heading">
+    <div class="form-wrapper reveal">
+
+      <div class="form-header">
+        <span class="section-eyebrow">Get in touch</span>
+        <h2 id="quote-heading">Request a Free Quote</h2>
+        <p>Fill in the form and we'll get back to you quickly. Rather talk? Give us a call.</p>
+      </div>
+
+      <!-- 👉 Replace {{FORMSPREE_ID}} with the client's Formspree form ID from formspree.io -->
+      <form
+        id="quote-form"
+        action="https://formspree.io/f/{{FORMSPREE_ID}}"
+        method="POST"
+        novalidate
+        aria-label="Request a quote form"
+      >
+        <!-- Hidden fields for Formspree -->
+        <input type="hidden" name="_subject" value="New quote request — Blake Electrical Contractors">
+        <input type="hidden" name="_next" value="">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. John Davies"
+              autocomplete="name"
+              required
+              aria-required="true"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="e.g. 07700 900000"
+              autocomplete="tel"
+              required
+              aria-required="true"
+            >
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="postcode">Postcode <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="postcode"
+              name="postcode"
+              placeholder="e.g. CF36 3HB"
+              autocomplete="postal-code"
+              required
+              aria-required="true"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="urgency">How urgent is the job?</label>
+            <select id="urgency" name="urgency" aria-label="Job urgency">
+              <option value="">Please select…</option>
+              <option value="asap">As soon as possible</option>
+              <option value="this-week">This week</option>
+              <option value="flexible">No rush — planning ahead</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="job">Describe the job</label>
+          <textarea
+            id="job"
+            name="job"
+            placeholder="Tell us what you need — e.g. fuse board upgrade, EV charger, fault finding…"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Photos <span style="font-weight:400;color:#777;">(optional)</span></label>
+          <!-- 👉 File uploads require a Formspree paid plan -->
+          <label class="file-label" for="photos" aria-label="Upload photos of the job (optional)">
+            <span aria-hidden="true">📎</span>
+            <span id="file-label-text">Attach photos of the job</span>
+          </label>
+          <input
+            type="file"
+            id="photos"
+            name="photos"
+            accept="image/*"
+            multiple
+            aria-label="Upload job photos"
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn" aria-label="Submit quote request">
+          ⚡ Send my quote request
+        </button>
+
+        <div class="form-error" id="form-error" role="alert" aria-live="assertive">
+          Something went wrong — please try again, or call us on <a href="tel:07495309257">07495 309257</a>.
+        </div>
+
+      </form>
+
+      <!-- Success state — shown after successful submission -->
+      <div class="success-state" id="success-state" role="alert" aria-live="polite" aria-label="Quote request sent successfully">
+        <div class="tick" aria-hidden="true">✓</div>
+        <h3>Quote request sent!</h3>
+        <p>Thanks — we'll be in touch shortly. If you need us sooner, give us a ring:</p>
+        <a href="tel:07495309257" class="btn btn-primary" style="display:inline-flex;">📞 07495 309257</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="brand-name">Blake Electrical Contractors</p>
+          <p class="brand-tagline">Reliable · Professional · Local — Porthcawl &amp; Bridgend</p>
+        </div>
+
+        <div class="footer-contact">
+          <a href="tel:07495309257" aria-label="Call 07495 309257">
+            📞 07495 309257
+          </a>
+          <a href="mailto:enquiries@blakeelectricalcontractors.co.uk" aria-label="Email enquiries@blakeelectricalcontractors.co.uk">
+            ✉️ enquiries@blakeelectricalcontractors.co.uk
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61576968135267" target="_blank" rel="noopener noreferrer" aria-label="Blake Electrical Contractors on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="flex-shrink:0;"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="copy-year"></span> Blake Electrical Contractors. All rights reserved.</span>
+
+      </div>
+
+      <!-- 👉 Do not remove — Letterbox Drops credit -->
+      <div class="footer-credit">
+        Designed and developed with ♥ by <a href="https://letterboxdrops.uk/" target="_blank" rel="noopener noreferrer">Letterbox Drops</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // Copyright year
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+
+    // ── Scroll reveal (IntersectionObserver, fire-once) ──────────────
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // fire-once
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => observer.observe(el));
+    } else {
+      // Fallback — show all immediately
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+
+    // ── File upload label update ─────────────────────────────────────
+    const fileInput = document.getElementById('photos');
+    const fileLabel = document.getElementById('file-label-text');
+    if (fileInput && fileLabel) {
+      fileInput.addEventListener('change', () => {
+        const count = fileInput.files.length;
+        fileLabel.textContent = count > 0
+          ? `${count} photo${count > 1 ? 's' : ''} selected`
+          : 'Attach photos of the job';
+      });
+    }
+
+    // ── Form submission via Formspree (fetch) ────────────────────────
+    const form       = document.getElementById('quote-form');
+    const errorBox   = document.getElementById('form-error');
+    const successDiv = document.getElementById('success-state');
+    const submitBtn  = form ? form.querySelector('.submit-btn') : null;
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        errorBox.style.display = 'none';
+
+        // Basic client-side validation
+        const name     = form.name.value.trim();
+        const phone    = form.phone.value.trim();
+        const postcode = form.postcode.value.trim();
+        if (!name || !phone || !postcode) {
+          errorBox.textContent = 'Please fill in your name, phone number, and postcode.';
+          errorBox.style.display = 'block';
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        try {
+          const data = new FormData(form);
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            form.style.display = 'none';
+            successDiv.style.display = 'block';
+          } else {
+            throw new Error('Server error');
+          }
+        } catch (err) {
+          errorBox.textContent = '';
+          errorBox.innerHTML = 'Something went wrong — please try again, or call us on <a href="tel:07495309257">07495 309257</a>.';
+          errorBox.style.display = 'block';
+          submitBtn.disabled = false;
+          submitBtn.textContent = '⚡ Send my quote request';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
